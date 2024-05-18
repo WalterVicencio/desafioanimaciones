@@ -1,15 +1,27 @@
 
-nav ul{
-    display: none;
-}
 
 nav{
     background-color: #08549c;
     color: white;
     margin:0px;
-    display: flex;
+    display: grid;
     justify-content: space-around;
     padding: 20px;
+    
+}
+
+.chico{
+    display: none;
+}
+
+nav ul{
+    display: block;
+    list-style: none;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
 }
 
 .search{
@@ -62,8 +74,20 @@ nav{
     padding: 20px;
     grid-template-columns: auto;
     justify-content: center;
+    animation: move2 2s ease;
 
 }
+
+
+@keyframes move2 {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
 
 .paginacion{
     display: flex;
@@ -185,6 +209,12 @@ nav ul li:hover{
 
     .tarjeta img{
         width: 200px;
+        filter: grayscale(100%);
+        transition: filter 2s ease;
+    }
+
+    .tarjeta img:hover{
+        filter: none;
     }
 
     .main{
@@ -214,7 +244,21 @@ nav ul li:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: move 2s ease;
     }
+
+    @keyframes move {
+        from{
+            transform: translateX(200px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+
+
+
 
     .paginacion{
         text-align: center;
