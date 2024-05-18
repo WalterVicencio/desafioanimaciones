@@ -1,0 +1,258 @@
+
+nav ul{
+    display: none;
+}
+
+nav{
+    background-color: #08549c;
+    color: white;
+    margin:0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.search{
+    background-color: #e8e4e4;
+    padding: 5px 15px 15px 15px;
+}
+
+.search p{
+    text-align: center;
+}
+
+.lista{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100%;
+    border: none;
+}
+
+
+.tarjeta{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    gap: 5px;
+
+}
+.tarjeta p{
+    margin: 0px;;
+}
+.tarjeta button{
+    background-color: #08549c;
+    margin: 0px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.tarjeta img{
+    width: 200px;
+}
+
+.main{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: auto;
+    justify-content: center;
+
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    background-color: #082c6c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.iconos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    transition: background 1s ease;
+}
+
+nav ul li:hover{
+    background-color: goldenrod;
+}
+
+
+
+@media (min-width: 576px){
+
+    nav{
+        grid-area: nav;
+        display: block;
+        background-color: #08549c;
+    }
+
+    .chico{
+        display: none;
+    }
+
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li:hover{
+        background-color: goldenrod;
+    }
+
+    /*-------TRANSVERSALES-----------*/
+
+    nav div{
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+    nav li{
+        color: white;
+        list-style: none;
+    }
+
+    nav li a{
+        list-style: none;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .lista{
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 100%;
+        border: none;
+    }
+    .tarjeta{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        gap: 5px;
+ 
+    }
+    .tarjeta p{
+        margin: 0px;;
+    }
+    .tarjeta button{
+        background-color: #08549c;
+        margin: 0px;
+        padding: 5px 10px;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .tarjeta img{
+        width: 200px;
+    }
+
+    .main{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    
+    /*-------FIN TRANSVERSALES-----------*/
+
+    .search{
+        grid-area: search;
+        background-color: #e8e4e4;
+
+        padding: 5px 15px 15px 15px;
+    }
+
+    .search p{
+        text-align: center;
+    }
+
+    main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paginacion{
+        text-align: center;
+        align-items: center;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: #082c6c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .iconos{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .contenido{
+        display: grid;
+        grid-template-columns: 1.5fr 10fr;
+
+        grid-template-areas: 
+            "nav search"
+            "nav main"
+            "footer main";
+
+        min-height: auto;
+    }
+}
+
+
+
+
+
+
